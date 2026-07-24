@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like & Comment</title>
+    <link rel="stylesheet" href="like.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <img id="image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlQmvZTKnkAmHIrcHfBdq5mT-1OVaniB5KlePNQTgr4ydajC7WjrsFjU&s=10"
+            alt="Nature">
+
+        <button id="like-button" onclick="Likes()">❤️ Like</button>
+
+        <h2 id="likes">Likes: 0</h2>
+
+        <div class="comment-box">
+            <input
+                type="text"
+                id="comment"
+                placeholder="Write a comment..."
+            >
+
+            <button onclick="Comment()">Post</button>
+        </div>
+
+        <ul id="comment-list"></ul>
+
+    </div>
+
+    <script src="like.js"></script>
+
+</body>
+</html>
