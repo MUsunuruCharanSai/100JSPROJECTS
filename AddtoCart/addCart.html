@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            padding: 40px;
+        }
+
+        #products-div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        #products-div div {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+            transition: .3s;
+        }
+
+        #products-div div:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+        }
+
+        #products-div img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #products-div h2 {
+            margin-top: 15px;
+            color: #222;
+            font-size: 22px;
+        }
+
+        #products-div h3 {
+            color: #2563eb;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="products-div">
+
+    </div>
+    <script src="cart.js"></script>
+</body>
+
+</html>
