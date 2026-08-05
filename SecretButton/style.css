@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+#btn {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border: 3px solid #2563eb;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#btn:hover {
+    transform: scale(1.08);
+}
+
+#btn:active {
+    transform: scale(0.9);
+}
+
+#one-secret-button,
+#three-secret-button {
+    display: none;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+#one-secret-button {
+    background: #f59e0b;
+}
+
+#one-secret-button:hover {
+    background: #d97706;
+    transform: translateY(-3px);
+}
+
+#three-secret-button {
+    background: #22c55e;
+}
+
+#three-secret-button:hover {
+    background: #16a34a;
+    transform: translateY(-3px);
+}
