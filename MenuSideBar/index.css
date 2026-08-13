@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #eee;
+}
+
+#open {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: white;
+
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#close {
+  color: red;
+  cursor: pointer;
+}
+
+.sidebar a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: gray;
+}
+
+.sidebar a:hover {
+  background: pink;
+}
