@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="game">
+
+        <h1>Number Guessing Game</h1>
+
+        <p>Guess a number between 1 and 5</p>
+
+        <input type="number" id="guess" min="1" max="5">
+
+        <button onclick="checkGuess()">Guess</button>
+
+        <h3 id="result"></h3>
+
+        <div class="score">
+            <p>
+                User Score
+                <span id="userScore">0</span>
+            </p>
+
+            <p>
+                System Score
+                <span id="systemScore">0</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
