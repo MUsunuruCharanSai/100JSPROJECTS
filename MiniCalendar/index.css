@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: slateblue;
+  font-family: cursive;
+}
+
+.calendar {
+  width: 250px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#month {
+  margin: 0;
+  padding: 10px;
+  background: orangered;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#day,
+#year {
+  color: gray;
+}
+
+#date {
+  margin: 0;
+  font-size: 70px;
+}
