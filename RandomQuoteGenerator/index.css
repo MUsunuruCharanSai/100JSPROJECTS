@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background:
+    radial-gradient(circle at top left, #667eea, transparent 40%),
+    radial-gradient(circle at bottom right, #764ba2, transparent 40%), #111827;
+}
+
+/* Main Card */
+
+.container {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 45px 40px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+
+  color: white;
+}
+
+/* Heading */
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 35px;
+
+  letter-spacing: 1px;
+}
+
+/* Quote */
+
+#quote {
+  font-size: 25px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+
+  margin-bottom: 20px;
+
+  min-height: 80px;
+
+  color: #ffffff;
+}
+
+/* Author */
+
+#author {
+  font-size: 18px;
+
+  color: #d1d5db;
+
+  font-style: italic;
+
+  margin-bottom: 35px;
+}
+
+/* Buttons Container */
+
+.container button {
+  padding: 12px 22px;
+
+  margin: 6px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  color: white;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Button Hover */
+
+.container button:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Button Click */
+
+.container button:active {
+  transform: translateY(0);
+}
+
+/* New Quote Button */
+
+.container button:first-of-type {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* New Quote Hover */
+
+.container button:first-of-type:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 35px 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  #quote {
+    font-size: 20px;
+  }
+
+  #author {
+    font-size: 16px;
+  }
+
+  .container button {
+    padding: 11px 16px;
+    font-size: 14px;
+  }
+}
