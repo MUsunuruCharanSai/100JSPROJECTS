@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.dice {
+    font-size: 7rem;
+    margin: 20px;
+}
+
+.roll {
+    animation: roll 1s;
+}
+
+@keyframes roll {
+    to {
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #47a5c4;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    margin: 8px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    font-size: 30px;
+}
