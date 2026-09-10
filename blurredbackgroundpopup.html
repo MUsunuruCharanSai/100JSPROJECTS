@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popup</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?w=1200");
+      background-size: cover;
+      transition: 0.5s;
+    }
+
+    .blur {
+      filter: blur(5px) brightness(0.7);
+    }
+
+    .popup {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+      transition: 0.5s;
+    }
+
+    .hide {
+      opacity: 0;
+      visibility: hidden;
+      top: 10%;
+    }
+
+    input,
+    .popup button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Welcome to our website</h1>
+    <button class="btn">Click to join</button>
+  </div>
+
+  <div class="popup">
+    <span class="close">×</span>
+
+    <h2>20% OFF Offer</h2>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <button>Join</button>
+  </div>
+
+  <script>
+    const container = document.querySelector(".container");
+    const popup = document.querySelector(".popup");
+    const btn = document.querySelector(".btn");
+    const close = document.querySelector(".close");
+
+    btn.addEventListener("click", () => {
+      container.classList.add("blur");
+      popup.classList.remove("hide");
+    });
+
+    close.addEventListener("click", () => {
+      container.classList.remove("blur");
+      popup.classList.add("hide");
+    });
+  </script>
+
+</body>
+</html>
