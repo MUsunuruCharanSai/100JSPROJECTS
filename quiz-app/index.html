@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Quiz App</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+
+            <h1>🧠 JavaScript Quiz</h1>
+
+            <div class="quiz-info">
+                <span id="questionNumber">
+                    Question 1 of 10
+                </span>
+
+                <span id="score">
+                    Score: 0
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <!-- Question -->
+        <div class="question-container">
+
+            <h2 id="question">
+                Question goes here
+            </h2>
+
+        </div>
+
+        <!-- Options -->
+        <div id="options" class="options">
+
+        </div>
+
+        <!-- Feedback -->
+        <p id="feedback"></p>
+
+        <!-- Next Button -->
+        <button id="nextBtn" class="next-btn">
+            Next →
+        </button>
+
+    </div>
+
+
+    <!-- Result Screen -->
+
+    <div id="resultContainer" class="result-container">
+
+        <div class="result-card">
+
+            <h1>🎉 Quiz Completed!</h1>
+
+            <p>Your final score is</p>
+
+            <div id="finalScore" class="final-score">
+                0 / 10
+            </div>
+
+            <p id="resultMessage">
+                Good job!
+            </p>
+
+            <button id="restartBtn">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
