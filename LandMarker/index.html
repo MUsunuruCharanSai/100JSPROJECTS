@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Plot Marker</title>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <h1>Land Plot Marker</h1>
+                <p>Walk around the boundary to measure the land</p>
+            </div>
+
+            <div class="gps-status">
+                <span id="gpsDot"></span>
+                <span id="gpsStatus">GPS Not Started</span>
+            </div>
+        </header>
+        <div id="map"></div>
+        <div class="controls">
+            <button id="startBtn" class="btn start">
+                ▶ Start Walking
+            </button>
+            <button id="pauseBtn" class="btn pause" disabled>
+                ⏸ Pause
+            </button>
+            <button id="stopBtn" class="btn stop" disabled>
+                ■ Stop & Calculate
+            </button>
+            <button id="clearBtn" class="btn clear">
+                🗑 Clear
+            </button>
+        </div>
+        <div class="info-grid">
+            <div class="info-card">
+                <span>GPS Accuracy</span>
+                <strong id="accuracy">--</strong>
+            </div>
+            <div class="info-card">
+                <span>Points Recorded</span>
+                <strong id="points">0</strong>
+            </div>
+            <div class="info-card">
+                <span>Distance Walked</span>
+                <strong id="distance">0 m</strong>
+            </div>
+            <div class="info-card">
+                <span>Land Area</span>
+                <strong id="area">--</strong>
+            </div>
+        </div>
+        <div id="result" class="result">
+            <h2>Land Measurement</h2>
+            <div class="result-grid">
+                <div>
+                    <span>Square Meters</span>
+                    <strong id="areaM2">--</strong>
+                </div>
+                <div>
+                    <span>Acres</span>
+                    <strong id="areaAcres">--</strong>
+                </div>
+                <div>
+                    <span>Hectares</span>
+                    <strong id="areaHectares">--</strong>
+                </div>
+            </div>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
