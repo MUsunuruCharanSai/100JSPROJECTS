@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coupon Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="box">
+        <h2>Order Summary</h2>
+
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <input type="text" id="coupon" placeholder="Enter coupon">
+
+        <button onclick="applyCoupon()">Apply Coupon</button>
+
+        <p>Original Price: ₹<span id="original">0</span></p>
+        <p>Discount: ₹<span id="discount">0</span></p>
+        <h3>Final Price: ₹<span id="final">0</span></h3>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
