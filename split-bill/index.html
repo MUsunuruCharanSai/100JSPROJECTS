@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Split Bill</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Split Bill</h2>
+
+        <input type="number" id="bill" placeholder="Bill amount">
+
+        <select id="tip">
+            <option value="0">No Tip</option>
+            <option value="5">5% Tip</option>
+            <option value="10">10% Tip</option>
+            <option value="15">15% Tip</option>
+            <option value="20">20% Tip</option>
+        </select>
+
+        <input type="number" id="people" placeholder="Number of people">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p>Tip: ₹<span id="tipAmount">0</span></p>
+
+        <p>Total: ₹<span id="total">0</span></p>
+
+        <h3>Per Person: ₹<span id="person">0</span></h3>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
