@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Switcher</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Background Color</h2>
+
+        <div class="colors">
+            <button class="red" onclick="changeColor('red')"></button>
+            <button class="blue" onclick="changeColor('blue')"></button>
+            <button class="green" onclick="changeColor('green')"></button>
+            <button class="purple" onclick="changeColor('purple')"></button>
+        </div>
+
+        <p>Selected Color:</p>
+
+        <h3 id="colorName">White</h3>
+
+        <button class="reset" onclick="resetColor()">Reset</button>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
