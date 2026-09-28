@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background: #222;
+    color: white;
+    font-family: Arial;
+}
+
+canvas {
+    background: black;
+    border: 3px solid lime;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
