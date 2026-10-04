@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Picture Upload</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="profile-container">
+
+        <h2>Profile Picture</h2>
+
+        <div class="profile-image">
+            <img id="profilePreview" src="https://via.placeholder.com/150" alt="Profile">
+        </div>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <label for="imageInput" class="upload-btn">
+            Upload Picture
+        </label>
+
+        <button id="removeBtn" class="remove-btn">
+            Remove
+        </button>
+
+        <p id="fileName"></p>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
