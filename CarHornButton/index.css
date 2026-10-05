@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 8px solid #555;
+  background: red;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  transform: scale(0.9);
+  background: darkred;
+}
