@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print PDF</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Document Generator</h1>
+
+        <input type="date" id="date">
+
+        <input 
+            type="text" 
+            id="heading" 
+            placeholder="Enter heading"
+        >
+
+        <textarea 
+            id="content" 
+            placeholder="Write your content here..."
+        ></textarea>
+
+        <button onclick="printPDF()">Print PDF</button>
+
+        <div class="preview">
+            <p id="showDate"></p>
+            <h2 id="showHeading">Your Heading</h2>
+            <p id="showContent">Your content will appear here...</p>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
