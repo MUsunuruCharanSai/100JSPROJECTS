@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+}
+
+.cart {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    margin: auto;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
