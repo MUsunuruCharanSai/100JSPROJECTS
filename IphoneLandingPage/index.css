@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f7;
+    color: #111;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 10%;
+    gap: 40px;
+}
+
+.content {
+    max-width: 450px;
+}
+
+.content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    margin-bottom: 25px;
+}
+
+button {
+    background: #0071e3;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+.phone img {
+    width: 300px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 35px;
+    box-shadow: 0 20px 50px #0002;
+    transition: 0.3s;
+}
+
+.phone img:hover {
+    transform: scale(1.04);
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#phoneNumber {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .phone img {
+        width: 230px;
+        height: 290px;
+    }
+}

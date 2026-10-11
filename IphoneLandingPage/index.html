@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h2>Apple</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1 id="title">iPhone 17 Pro</h1>
+            <p id="description">
+                Power meets perfection.
+                Experience the next level of innovation.
+            </p>
+            <h2 id="price">From $999</h2>
+            <button onclick="changePhone()">Explore iPhone</button>
+        </div>
+
+        <div class="phone">
+            <img
+                id="phoneImage"
+                src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=700&q=80"
+                alt="iPhone"
+            >
+        </div>
+    </section>
+
+    <section class="bottom">
+        <button onclick="previousPhone()">Previous</button>
+        <span id="phoneNumber">01 / 02</span>
+        <button onclick="nextPhone()">Next</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
