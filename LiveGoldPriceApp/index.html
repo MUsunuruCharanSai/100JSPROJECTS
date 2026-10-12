@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Gold Price</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🪙 Gold Price Tracker</h1>
+    <p class="subtitle">Check the latest gold market price</p>
+
+    <div class="card">
+      <p class="label">24K Gold Price</p>
+      <h2 id="price">Loading...</h2>
+      <p>Price per gram</p>
+
+      <hr>
+
+      <p class="label">22K Gold Price</p>
+      <h2 id="price22">Loading...</h2>
+      <p>Price per gram</p>
+
+      <p id="updated">Connecting to API...</p>
+
+      <button id="refresh">Refresh Price</button>
+    </div>
+
+    <p class="note">
+      Prices are indicative market estimates, not jewellery shop prices.
+    </p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
