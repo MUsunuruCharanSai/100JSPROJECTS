@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.toolbar {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 5px;
+}
+
+canvas {
+  background: white;
+  border: 2px solid #333;
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  cursor: crosshair;
+  touch-action: none;
+}
