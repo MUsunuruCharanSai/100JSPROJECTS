@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  color: #3e2723;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #4e342e;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #ffcc80;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #efddc5;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 12px 25px;
+  background: #6d4c41;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3e2723;
+}
+
+.menu {
+  padding: 55px 8%;
+  text-align: center;
+}
+
+.menu h2, .about h2 {
+  margin-bottom: 30px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 230px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000012;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.emoji {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin: 12px 0;
+  color: #795548;
+}
+
+.card h4 {
+  color: #a0522d;
+}
+
+.about {
+  text-align: center;
+  padding: 50px 15%;
+  background: #f5e6d3;
+  line-height: 1.8;
+}
+
+footer {
+  background: #4e342e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
