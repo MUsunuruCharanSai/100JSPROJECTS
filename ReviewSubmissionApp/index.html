@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Write a Review</h1>
+    <p>Share your experience with us!</p>
+
+    <form id="reviewForm">
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <div class="stars" id="stars">
+        <span data-rating="1">★</span>
+        <span data-rating="2">★</span>
+        <span data-rating="3">★</span>
+        <span data-rating="4">★</span>
+        <span data-rating="5">★</span>
+      </div>
+
+      <textarea id="review" placeholder="Write your review..." required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <h2>Customer Reviews</h2>
+    <div id="reviewList"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
