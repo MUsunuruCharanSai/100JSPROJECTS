@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background: #f0f4f8;
+}
+
+.alarm {
+    background: white;
+    padding: 30px;
+    margin: auto;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #ccc;
+}
+
+input, button {
+    padding: 10px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message {
+    color: green;
+    font-weight: bold;
+}

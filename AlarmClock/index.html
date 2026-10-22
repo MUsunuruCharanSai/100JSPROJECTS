@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Alarm</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="alarm">
+        <h2>⏰ Simple Alarm</h2>
+
+        <label for="seconds">Set seconds:</label>
+        <input type="number" id="seconds" min="1"
+               placeholder="Enter seconds">
+
+        <button id="setAlarm">Set Alarm</button>
+
+        <h3 id="timer">00:00</h3>
+        <p id="message"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
