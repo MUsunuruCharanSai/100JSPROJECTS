@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Color Guessing Game</h1>
+    <h2 id="colorCode">RGB(255, 0, 0)</h2>
+    <p>Guess the correct color!</p>
+
+    <div class="colors">
+        <button class="color" onclick="checkColor(0)"></button>
+        <button class="color" onclick="checkColor(1)"></button>
+        <button class="color" onclick="checkColor(2)"></button>
+    </div>
+
+    <h3 id="message"></h3>
+    <button onclick="startGame()">New Game</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
